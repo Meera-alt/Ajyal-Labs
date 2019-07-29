@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<h1>JavaScript * Operation</h1>
+
+number 1: <input id="FirstNumber" type="number" /> <br />
+number 2:<input id="SecondNumber" type="number" /> <br />
+<input type="button" onclick="times();" value="Multiply" />
+<p>
+  The Result is : <br />
+  <span id="result"></span>
+
+  <script>
+    function times() {
+      num1 = document.getElementById("FirstNumber").value;
+      num2 = document.getElementById("SecondNumber").value;
+      document.getElementById("result").innerHTML = num1 * num2;
+    }
+  </script>
+</p>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<h1>JavaScript Convert c --> f </h1>
+
+What is the Temprature: <input id="Temprature" type="number" /> <br />
+<input type="button" onclick="Convert();" value = "Convert to Feh"> <br />
+
+
+  The Result is : <br />
+  <span id="result"></span>
+
+  <script>
+    function Convert() {
+     var temp = document.getElementById("Temprature").value * 9 / 5 + 32;
+      document.getElementById("result").innerHTML=temp;
+
+      
+    }
+  </script>
+</p>
