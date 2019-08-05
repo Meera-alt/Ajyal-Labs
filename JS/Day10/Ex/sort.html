@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+  <p id="demo"></p>
+
+  <button onclick="myFunction()">SORT IT</button>
+
+  <script>
+    var numbers = ["1", "5", "8", "3"];
+    document.getElementById("demo").innerHTML = numbers;
+
+    function myFunction() {
+      numbers.sort();
+      document.getElementById("demo").innerHTML = numbers;
+    }
+  </script>
+</html>

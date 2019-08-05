@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    let add = function(a, b) {
+      document.write("The sum is  " + (a + b) + "<br>");
+    };
+
+    let multiply = function(a, b) {
+      document.write("The product is " + a * b + "<br>");
+    };
+
+    let calc = function(num1, num2, callback) {
+      callback(num1, num2);
+    };
+
+    calc(90, 9, add);
+    calc(90, 9, multiply);
+    calc(90, 9, function(a, b) {
+      document.write("After subtracting, the value is " + (a - b));
+    });
+  </script>
+</html>

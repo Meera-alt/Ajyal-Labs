@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    function sorter(array) {
+      var swap;
+      var swapCount = 0;
+
+      do {
+        for (var i = 1, swapCount = 0; i < array.length; i++) {
+          if (array[i - 1] > array[i]) {
+            swap = array[i - 1];
+            array[i - 1] = array[i];
+            array[i] = swap;
+            swapCount += 1;
+          }
+        }
+      } while (swapCount > 0);
+      return array;
+    }
+  </script>
+</html>

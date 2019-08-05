@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<html>
+  <p id="uni"></p>
+
+  <script>
+    function onlyUnique(value, index, self) {
+      return self.indexOf(value) === index;
+    }
+
+    var a = ["a", "b", "a", "c", "c"];
+    var unique = a.filter(onlyUnique);
+
+    document.getElementById("uni").innerHTML =
+      "These are all the following unique values in the array: " + unique;
+  </script>
+</html>

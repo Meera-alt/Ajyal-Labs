@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    var Groups = [
+      { name: "A", salary: "4000 AED" },
+      { name: "B", salary: "5000 AED" },
+      { name: "C", salary: "7000 AED" },
+      { name: "B", salary: "9000 AED" },
+      { name: "B", salary: "4000 AED" },
+      { name: "D", salary: "15000 AED" },
+      { name: "C", salary: "4000 AED" },
+      { name: "D", salary: "6000 AED" }
+    ];
+
+    var letter = Groups.filter(function(group) {
+      return group.name === "D";
+    });
+
+    console.log(letter);
+  </script>
+</html>

@@ -1,0 +1,12 @@
+<script>
+  let first = function() {
+    console.log("Though, I am written first inside, I will be executed later");
+  };
+  let second = function(callback) {
+    console.log(
+      "Though, I am the second function, I will be the one to be executed first"
+    );
+    callback();
+  };
+  second(first);
+</script>
