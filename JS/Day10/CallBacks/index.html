@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <script>
+      function Message() {
+        //function will return promise objects
+        return new Promise(function(resolve, reject) {
+          setTimeout(function() {
+            resolve("I have been called back by Promise" + "<br>");
+          }, 2000);
+        });
+      }
+
+      function sync(x) {
+        document.write(x);
+      }
+
+      Message().then(sync);
+      //then() method returns the object when the promise is 'resolved'
+    </script>
+  </body>
+</html>
